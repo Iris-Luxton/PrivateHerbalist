@@ -1,0 +1,19 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hello", "Hi", "Hey"],
+            "responses": ["Hello! How can I assist you with herbs today?"]
+        },
+        {
+            "tag": "herb_info",
+            "patterns": ["Tell me about {herb_name}", "What can you say about {herb_name}"],
+            "responses": ["{herb_name} is a herb known for its medicinal properties."]
+        },
+        {
+            "tag": "unknown",
+            "patterns": ["I don't know", "I'm not sure"],
+            "responses": ["I'm here to provide information about herbs. Feel free to ask any questions."]
+        }
+    ]
+}

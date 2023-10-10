@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F5E7; /* Herbal-themed background color */
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header {
+    background-color: #60A561; /* Herbal-themed header color */
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-messages {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #DDDDDD;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    background-color: #60A561; /* Herbal-themed button color */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
