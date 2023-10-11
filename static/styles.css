@@ -1,0 +1,88 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+/* Chat container styles */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF; /* White background for chat container */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column; /* Make it a column layout */
+    max-height: 600px; /* Limit the chat container height */
+}
+/* Styles for the "typing" indicator */
+.typing-indicator {
+    color: #666;
+    font-style: italic;
+    padding-left: 10px;
+    margin: 10px 0;
+    display: none; /* Initially hidden */
+}
+
+/* Chat message styles */
+.user-message, .bot-message {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    max-width: 80%;
+}
+.user-message {
+    background-color: #E3E3E3; /* Light gray for user messages */
+    float: right;
+}
+
+.bot-message {
+    background-color: #A8DF65; /* Light green for bot messages */
+    float: left;
+}
+
+/* User input styles */
+.user-input-container {
+    margin-top: auto; /* Push the input to the bottom of the container */
+    display: flex;
+    align-items: center; /* Center vertically within the input container */
+}
+
+#user-input {
+    flex: 1; /* Expand to fill available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Add a small margin at the bottom */
+    word-wrap: break-word; /* Allow text to wrap to the next line */
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #006400; /* Dark green for the send button */
+    color: #FFF; /* White text color */
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #004F00; /* Dark green on hover */
+}
+
+/* Additional styles for making each message appear on a new line */
+.user-message, .bot-message {
+    clear: both;
+}
